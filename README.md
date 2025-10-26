@@ -1,119 +1,130 @@
-🌱 Smart Plant Watering Prediction System
-Integrating Agricultural Knowledge with Automation
-📖 Overview
+# 🌱 Smart Plant Watering Prediction System
 
-This project leverages Machine Learning and Automation to predict whether plants require watering based on environmental and soil parameters. By analyzing sensor data and applying predictive models, the system helps optimize water usage, prevent overwatering or underwatering, and support sustainable farming practices.
+### Integrating Agricultural Knowledge with Automation
+
+---
+
+## 📖 Overview
+
+This project leverages **Machine Learning and Automation** to predict whether plants require watering based on environmental and soil parameters. By analyzing sensor data and applying predictive models, the system helps optimize water usage, prevent overwatering or underwatering, and support sustainable farming practices.
 
 The model is trained using real-world agricultural datasets to enhance decision-making for smart irrigation systems.
 
-🚜 Objective
+---
 
-To automate the plant watering process using a predictive system that determines the need for irrigation based on environmental and soil features — bridging agricultural expertise with data-driven automation.
+## 🚜 Objective
 
-💡 Key Features
+To **automate the plant watering process** using a predictive system that determines the need for irrigation based on environmental and soil features — bridging **agricultural expertise** with **data-driven automation**.
 
-🌾 Predicts whether a plant needs watering using ML algorithms
+---
 
-📊 Performs data preprocessing (handling missing values, scaling, encoding)
+## 💡 Key Features
 
-🧠 Implements a K-Nearest Neighbors (KNN) classifier for prediction
+* 🌾 Predicts whether a plant needs watering using ML algorithms
+* 📊 Performs data preprocessing (handling missing values, scaling, encoding)
+* 🧠 Implements a **K-Nearest Neighbors (KNN)** classifier for prediction
+* 📈 Includes detailed exploratory data analysis (EDA) and visualizations
+* 🔍 Scalable model ready for IoT integration with smart sensors
 
-📈 Includes detailed exploratory data analysis (EDA) and visualizations
+---
 
-🔍 Scalable model ready for IoT integration with smart sensors
+## 🧩 Dataset
 
-🧩 Dataset
-
-Dataset Source: Kaggle - Dataset for Predicting Watering the Plants
+**Dataset Source:** [Kaggle - Dataset for Predicting Watering the Plants](https://www.kaggle.com/datasets/nelakurthisudheer/dataset-for-predicting-watering-the-plants)
 
 The dataset includes features such as:
 
-Temperature
+* Temperature
+* Humidity
+* Soil Moisture
+* Light Intensity
+* Rainfall
+* Wind Speed
+* and other environmental metrics
 
-Humidity
+The target variable **“Status”** indicates whether watering is needed (`1`) or not (`0`).
 
-Soil Moisture
+---
 
-Light Intensity
+## ⚙️ Technologies Used
 
-Rainfall
+* **Programming Language:** Python
+* **Libraries:**
 
-Wind Speed
+  * `pandas`, `numpy` – Data Handling
+  * `scikit-learn` – Machine Learning Models & Preprocessing
+  * `matplotlib`, `seaborn` – Data Visualization
+  * `statsmodels` – Statistical Analysis
 
-and other environmental metrics
+---
 
-The target variable “Status” indicates whether watering is needed (1) or not (0).
+## 🧠 Model Development Workflow
 
-⚙️ Technologies Used
+1. **Data Loading & Exploration:**
+   Load the dataset, analyze feature relationships, and visualize correlations.
 
-Programming Language: Python
+2. **Preprocessing:**
 
-Libraries:
+   * Handle missing data using `IterativeImputer`
+   * Scale data using `MinMaxScaler`
+   * Encode categorical variables using `LabelBinarizer`
 
-pandas, numpy – Data Handling
+3. **Model Training:**
+   Train a **K-Nearest Neighbors (KNN)** classifier with optimized parameters.
 
-scikit-learn – Machine Learning Models & Preprocessing
+4. **Evaluation:**
 
-matplotlib, seaborn – Data Visualization
+   * Compute Accuracy, Confusion Matrix, and Classification Report
+   * Visualize model performance
 
-statsmodels – Statistical Analysis
+5. **Prediction Example:**
+   Test real-time data input (e.g., temperature, soil moisture, rainfall, etc.) to predict the watering requirement.
 
-🧠 Model Development Workflow
+---
 
-Data Loading & Exploration:
-Load the dataset, analyze feature relationships, and visualize correlations.
+## 📊 Model Performance
 
-Preprocessing:
+| Metric             | Value                         |
+| ------------------ | ----------------------------- |
+| **Accuracy**       | ~XX.XX% (varies with dataset) |
+| **Algorithm Used** | KNN (k = 3)                   |
 
-Handle missing data using IterativeImputer
+---
 
-Scale data using MinMaxScaler
-
-Encode categorical variables using LabelBinarizer
-
-Model Training:
-Train a K-Nearest Neighbors (KNN) classifier with optimized parameters.
-
-Evaluation:
-
-Compute Accuracy, Confusion Matrix, and Classification Report
-
-Visualize model performance
-
-Prediction Example:
-Test real-time data input (e.g., temperature, soil moisture, rainfall, etc.) to predict the watering requirement.
-
-📊 Model Performance
-Metric	Value
-Accuracy	~XX.XX% (varies with dataset)
-Algorithm Used	KNN (k = 3)
-🧪 Example Prediction
+## 🧪 Example Prediction
 
 Input sample:
 
+```python
 input_data = (5,23,27,4,21.44,5.8,28.38,22.67,101.46,7.375482851,224.0581164,98,47,37)
-
+```
 
 Output:
 
+```python
 Prediction: [1]  # Indicates watering is required
+```
 
-🚀 Future Enhancements
+---
 
-Integration with IoT sensors for real-time data collection
+## 🚀 Future Enhancements
 
-Deployment on microcontrollers (e.g., Raspberry Pi, Arduino) for automated watering
+* Integration with **IoT sensors** for real-time data collection
+* Deployment on **microcontrollers** (e.g., Raspberry Pi, Arduino) for automated watering
+* Use of **deep learning** for improved accuracy
+* Development of a **mobile/web dashboard** for farmers
 
-Use of deep learning for improved accuracy
+---
 
-Development of a mobile/web dashboard for farmers
+## 🧑‍💻 Author
 
-🧑‍💻 Author
+**AjithKumar P**
+**B.Sc. Botany**
+**Pachaiyappa’s College**
 
-AjithKumar P
-B.Sc. Botany
-Pachaiyappa’s College
+---
 
-🏷️ Keywords
+## 🏷️ Keywords
 
-Agriculture • Automation • IoT • Machine Learning • KNN • Smart Irrigation • Data Science
+`Agriculture` • `Automation` • `IoT` • `Machine Learning` • `KNN` • `Smart Irrigation` • `Data Science`
+
